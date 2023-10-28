@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity binary2hex is
+entity dec is
   Port (input : in std_logic_vector(3 downto 0);
         out1 : out std_logic_vector(6 downto 0));
 
-end binary2hex;
+end dec;
 
-architecture Behavioral of binary2hex is
+architecture Behavioral of dec is
     
 begin
     process(input)

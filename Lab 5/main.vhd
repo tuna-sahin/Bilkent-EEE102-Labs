@@ -11,7 +11,7 @@ entity main is
 end main;
 
 architecture Behavioral of main is
-    component binary2hex is
+    component dec is
          Port (input : in std_logic_vector(3 downto 0);
                out1 : out std_logic_vector(6 downto 0));
     end component;

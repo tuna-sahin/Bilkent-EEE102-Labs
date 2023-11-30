@@ -14,10 +14,10 @@ architecture Behavioral of main is
     signal cons : integer;
     signal coef : integer;
     signal length_i : integer;
-    signal length_b : std_logic_vector(30 downto 0); 
+    signal length_b : std_logic_vector(30 downto 0);   -- 31 bits is more than enough for these signals but for the sake of safety
     signal length_i2 : integer;
-    signal length_b2 : std_logic_vector(30 downto 0);
-    signal counter : std_logic_vector(30 downto 0);
+    signal length_b2 : std_logic_vector(30 downto 0);  -- 21 bits is probably enough for these but i have not tested it.
+    signal counter : std_logic_vector(30 downto 0);    -- according to my calculations it is 21 though.
     signal out_s : std_logic;
     signal last_angle : std_logic_vector(7 downto 0); 
     signal angle_i : integer;

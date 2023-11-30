@@ -1,6 +1,6 @@
 In the making of this driver, I hooked up the servo motors to an arduino to drive them.
 I then analysed the waveform using an oscilloscope for the corresponding angles.
-I noticed that the arduino sent a square pulse every 20 ms with varying lengths.
+I noticed that the arduino sent a square pulse every 20 ms with varying lengths (ΔT(rising-edge) = 20ms).
 I used python to curve fit the angle values to the pulse lengths and found the formula:
 550 + 10degree = pulse_length(μs)
 The rest is standart algorithm implementation in VHDL.
